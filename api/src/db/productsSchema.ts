@@ -16,11 +16,13 @@ export const productsTable = pgTable("products", {
 });
 
 export const createProductSchema = createInsertSchema(productsTable).omit({
+  //@ts-ignore
   id: true,
 });
 
 export const updateProductSchema = createInsertSchema(productsTable)
   .omit({
+    //@ts-ignore
     id: true,
   })
   .partial();

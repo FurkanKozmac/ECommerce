@@ -3,7 +3,6 @@ import { db } from "../../db/index";
 import { productsTable } from "../../db/productsSchema";
 import { eq } from "drizzle-orm";
 import _ from "lodash";
-import { createProductSchema } from "../../db/productsSchema";
 
 export async function listProducts(req: Request, res: Response) {
   try {
@@ -34,6 +33,8 @@ export async function getProductById(req: Request, res: Response) {
 
 export async function createProducts(req: Request, res: Response) {
   try {
+    console.log(req.userId);
+
     const [product] = await db
       .insert(productsTable)
       .values(req.cleanBody)

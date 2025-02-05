@@ -1,5 +1,6 @@
 import express, { json, urlencoded } from "express";
 import productRoutes from "./routes/products/index";
+import authRoutes from "./routes/auth/index";
 
 const app = express();
 const port = 4000;
@@ -14,6 +15,7 @@ app.get("/", (req, res) => {
 // products endpoints
 
 app.use("/products", productRoutes);
+app.use("/auth", authRoutes);
 
 app.listen(port, () => {
   console.log("Server is running on http://localhost:4000");

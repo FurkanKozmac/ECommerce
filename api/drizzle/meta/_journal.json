@@ -15,6 +15,13 @@
       "when": 1738507646668,
       "tag": "0001_futuristic_landau",
       "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "7",
+      "when": 1738781534406,
+      "tag": "0002_loud_george_stacy",
+      "breakpoints": true
     }
   ]
 }
