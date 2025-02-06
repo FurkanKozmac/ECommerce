@@ -5,22 +5,8 @@
     {
       "idx": 0,
       "version": "7",
-      "when": 1738507554328,
-      "tag": "0000_harsh_freak",
-      "breakpoints": true
-    },
-    {
-      "idx": 1,
-      "version": "7",
-      "when": 1738507646668,
-      "tag": "0001_futuristic_landau",
-      "breakpoints": true
-    },
-    {
-      "idx": 2,
-      "version": "7",
-      "when": 1738781534406,
-      "tag": "0002_loud_george_stacy",
+      "when": 1738870931695,
+      "tag": "0000_pretty_rhino",
       "breakpoints": true
     }
   ]

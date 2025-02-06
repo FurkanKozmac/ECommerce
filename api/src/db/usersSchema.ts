@@ -11,6 +11,8 @@ export const usersTable = pgTable("users", {
 });
 
 export const createUserSchema = createInsertSchema(usersTable).omit({
+  //@ts-ignore
+  id: true,
   role: true,
 });
 
